@@ -36,10 +36,7 @@ Bu proje, Insider Codecraft Bootcamp'in 11. görevi kapsamında geliştirilmişt
    ```
 
 3. `index.html` dosyasını bir web tarayıcısında açın veya bir yerel web sunucusu kullanın:
-   ```
-   python -m http.server
-   ```
-   veya VS Code Live Server eklentisi ile açın.
+VS Code Live Server eklentisi ile açın.
 
 ## Nasıl Kullanılır
 

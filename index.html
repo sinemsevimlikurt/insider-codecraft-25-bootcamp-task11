@@ -7,15 +7,32 @@
     <link rel="stylesheet" href="styles.css">
     <!-- jQuery for animations -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Fancybox CSS ve JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- Slick Slider CSS ve JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Random User Profiles</h1>
-            <button id="loadUsers">Load New Users</button>
+            <div class="button-container">
+                <button id="loadUsers">Load New Users</button>
+                <button id="shakeButton" class="effect-button">Shake Effect</button>
+                <button id="bounceButton" class="effect-button">Bounce Effect</button>
+            </div>
         </header>
         
+        <section class="slider-section">
+            <h2>Öne Çıkan Kullanıcılar</h2>
+            <div id="userSlider" class="user-slider"></div>
+        </section>
+        
+        <h2>Tüm Kullanıcılar</h2>
         <div id="userCards" class="user-grid"></div>
     </div>
 
